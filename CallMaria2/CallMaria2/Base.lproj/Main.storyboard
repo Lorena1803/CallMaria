@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,110 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CallMaria2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CallMaria" translatesAutoresizingMaskIntoConstraints="NO" id="nph-UG-fu5">
+                                <rect key="frame" x="0.0" y="69" width="393" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="Ueb-qU-Bah"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25X-xw-4R7">
+                                <rect key="frame" x="20" y="378" width="353" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="SZj-A6-mNe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHG-vA-WH9">
+                                <rect key="frame" x="20" y="433" width="353" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PAU-Ng-ZcM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BN-OT-hsv">
+                                <rect key="frame" x="100" y="498" width="193" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="uys-8O-2hT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMl-gI-jh4">
+                                <rect key="frame" x="151.66666666666666" y="608" width="90" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="E8e-y5-dBW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="googleCerto"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS0-NZ-wTi">
+                                <rect key="frame" x="145" y="763" width="228" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="dGX-Vd-JVz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cadastre-se"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não tem conta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe9-If-86V">
+                                <rect key="frame" x="20" y="763" width="120" height="35"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="e8h-8w-eIs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.97647058823529409" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZHG-vA-WH9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2J0-a4-FbX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="25X-xw-4R7" secondAttribute="trailing" constant="20" id="3ef-tw-gvH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fe9-If-86V" secondAttribute="bottom" constant="20" id="9IJ-Jn-8zW"/>
+                            <constraint firstItem="nph-UG-fu5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ECS-Gc-oaH"/>
+                            <constraint firstItem="25X-xw-4R7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GC3-V9-7jg"/>
+                            <constraint firstItem="2BN-OT-hsv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Gyr-WT-ZXX"/>
+                            <constraint firstItem="2BN-OT-hsv" firstAttribute="top" secondItem="ZHG-vA-WH9" secondAttribute="bottom" constant="30" id="HMK-gH-ZsF"/>
+                            <constraint firstItem="nMl-gI-jh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Imb-fB-7Mz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aS0-NZ-wTi" secondAttribute="trailing" constant="20" id="J3B-Yq-rgk"/>
+                            <constraint firstItem="ZHG-vA-WH9" firstAttribute="top" secondItem="25X-xw-4R7" secondAttribute="bottom" constant="20" id="OKy-dv-jcy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2BN-OT-hsv" secondAttribute="trailing" constant="100" id="Ri9-qe-Jqf"/>
+                            <constraint firstItem="nMl-gI-jh4" firstAttribute="top" secondItem="2BN-OT-hsv" secondAttribute="bottom" constant="75" id="WOQ-YM-qFb"/>
+                            <constraint firstItem="nph-UG-fu5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="a7A-f1-kgn"/>
+                            <constraint firstItem="aS0-NZ-wTi" firstAttribute="leading" secondItem="Fe9-If-86V" secondAttribute="trailing" constant="5" id="c4p-uC-jxa"/>
+                            <constraint firstItem="nph-UG-fu5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iGU-ll-8OL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZHG-vA-WH9" secondAttribute="trailing" constant="20" id="me1-tl-YOC"/>
+                            <constraint firstItem="Fe9-If-86V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rTA-xP-p3t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aS0-NZ-wTi" secondAttribute="bottom" constant="20" id="xHL-fp-yza"/>
+                            <constraint firstItem="25X-xw-4R7" firstAttribute="top" secondItem="nph-UG-fu5" secondAttribute="bottom" constant="35" id="xXl-nX-akH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="callMariaImageView" destination="nph-UG-fu5" id="TFL-6S-go0"/>
+                        <outlet property="emailTextField" destination="25X-xw-4R7" id="b6i-HC-OKm"/>
+                        <outlet property="loginButton" destination="2BN-OT-hsv" id="J4j-FF-dn9"/>
+                        <outlet property="loginGoogleButton" destination="nMl-gI-jh4" id="xZB-JJ-VEi"/>
+                        <outlet property="noAccountLabel" destination="Fe9-If-86V" id="NjZ-Lh-3Ro"/>
+                        <outlet property="passwordTextField" destination="ZHG-vA-WH9" id="71A-7g-v2u"/>
+                        <outlet property="registerButton" destination="aS0-NZ-wTi" id="nKp-go-aMl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CallMaria" width="500" height="500"/>
+        <image name="googleCerto" width="24" height="24"/>
+    </resources>
 </document>
